@@ -10,7 +10,6 @@ const TableHeader = () => {
   )
 }
 const TableBody = (props) => {
-  console.log(props);
   const { characters, removeItem } = props
   // setTimeout(() => {
   //   removeItem(0)
@@ -38,12 +37,10 @@ const TableBody = (props) => {
 
 class Table extends Component {
   render(h) {
-    console.log(this.props);
     const { characters, removeItem } = this.props
     // setTimeout(() => {
     //   removeItem(0)
     // })
-    console.log(characters);
     return (
       <table>
         <TableHeader />

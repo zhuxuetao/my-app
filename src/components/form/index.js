@@ -12,9 +12,9 @@ class Form extends Component {
         <form>
           
           <label htmlFor="name">name</label>
-          <input autocomplete="off" type="text" name="name" value={name} onChange={this.handlerChange} />
+          <input type="text" name="name" value={name} onChange={this.handlerChange} />
           <label htmlFor="job">job</label>
-          <input autocomplete="off" type="text" name="job" value={job} onChange={this.handlerChange} />
+          <input type="text" name="job" value={job} onChange={this.handlerChange} />
           <input type="button" value="Submit" onClick={this.submitForm} />
         </form>
       </div>
